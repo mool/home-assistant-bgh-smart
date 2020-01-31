@@ -11,7 +11,12 @@ Copy the `bgh_smart` folder to `<config_dir>/custom_components/bgh_smart/`.
 
 ### HACS
 
-TODO
+1. Go to the Community Store (HACS)
+2. Go to Settings
+3. Add `mool/home-assistant-bgh-smart` as a custom repository and select the
+`Integration` category
+4. Go to Integrations and search for "BGH Smart"
+5. Install the integration
 
 ## Configuration
 

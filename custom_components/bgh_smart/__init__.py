@@ -1,0 +1,1 @@
+"""BGH Smart integration."""

@@ -6,7 +6,10 @@ import voluptuous as vol
 
 import homeassistant.helpers.config_validation as cv
 
-from homeassistant.components.climate import ClimateDevice, PLATFORM_SCHEMA
+try:
+    from homeassistant.components.climate import ClimateEntity, PLATFORM_SCHEMA
+except ImportError:
+    from homeassistant.components.climate import ClimateDevice as ClimateEntity, PLATFORM_SCHEMA
 
 from homeassistant.components.climate.const import (
     SUPPORT_TARGET_TEMPERATURE,
@@ -73,7 +76,7 @@ def setup_platform(hass, config, add_entities, discovery_info=None):
 
     add_entities(BghHVAC(device, client) for device in devices)
 
-class BghHVAC(ClimateDevice):
+class BghHVAC(ClimateEntity):
     """Representation of a BGH Smart HVAC."""
 
     def __init__(self, device, client):

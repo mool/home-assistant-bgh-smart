@@ -92,7 +92,7 @@ class BghHVAC(ClimateEntity):
         self._current_temperature = None
         self._target_temperature = None
         self._mode = STATE_UNKNOWN
-        self._fan_speed = STATE_UNKNOWN
+        self._fan_speed = FAN_AUTO
 
         self._parse_data()
 

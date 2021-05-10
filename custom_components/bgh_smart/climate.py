@@ -31,7 +31,7 @@ PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend({
 
 FAN_AUTO = 'auto'
 FAN_LOW = 'low'
-FAN_MEDIUM = 'medium'
+FAN_MEDIUM = 'mid'
 FAN_HIGH = 'high'
 
 MAP_MODE_ID = {

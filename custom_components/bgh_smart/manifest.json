@@ -2,8 +2,10 @@
   "domain": "bgh_smart",
   "name": "BGH Smart",
   "documentation": "https://github.com/mool/home-assistant-config/tree/master/config/custom_components/bgh_smart",
+  "issue_tracker": "https://github.com/mool/home-assistant-bgh-smart/issues",
   "dependencies": [],
-  "codeowners": [],
+  "codeowners": ["@mool"],
   "requirements": ["pybgh==0.1.4"],
-  "version": "0.0.6"
+  "iot_class": "cloud_polling",
+  "version": "0.0.7"
 }

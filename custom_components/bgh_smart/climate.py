@@ -86,6 +86,10 @@ class BghHVAC(ClimateEntity):
 
         self._device_name = self._device['device_name']
         self._device_id = self._device['device_id']
+        // add a unique device id
+        self._device_unique_id = self _device['device_id']
+        self._attr_unique_id = self._device['device_id']
+        // not sure which one is the right one
         self._home_id = self._device['device_data']['HomeID']
         self._min_temp = None
         self._max_temp = None
